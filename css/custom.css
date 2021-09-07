@@ -1,0 +1,66 @@
+.process:hover .fas {
+  color: #5db442;
+  transition: all linear .5s;
+}
+.process:hover .right h4 {
+  color: #5db442;
+  transition: all linear .5s;
+}
+
+#service .service-card .card-body .row .card-item {
+  text-align: center;
+  padding: 10px;
+}
+.red {
+  color: red;
+  font-size: 13px;
+  margin: 0 6px;
+}
+.green {
+  color: green;
+  font-size: 13px;
+  margin: 0 6px;
+}
+
+.round {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px #5db442;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.round:hover {
+  transform: rotateY(360deg);
+  box-shadow: 0px 0px 15px #5db442;
+  transition: all linear .5s;
+}
+.round .heading {
+  font-size: 25px;
+  padding: 0;
+}
+.round p {
+  line-height: 0;
+}
+.card-item::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 22%;
+  height: 5px;
+  background-color: #7777;
+  transition: all linear .5s;
+}
+.card-item:hover::before {
+  background-color: #5db442;
+  transition: all linear .5s;
+}
+.card-item:hover button {
+  background-color: #5db442;
+  color: white;
+}

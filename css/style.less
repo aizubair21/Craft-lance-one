@@ -1,0 +1,326 @@
+@import "../css/theme.css";
+
+@brand_color:  #5db442;
+.heading {
+  font-size: 40px;
+  color: #3a3939fd;
+  font-family: 'roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pera{
+  font-size: 14px;
+  font-family: 'roboto';
+  color: #777777;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  color: #5db442;
+}
+
+header {
+  background-color: black;
+  div {
+    div {
+
+      div{
+        color: white;
+        .center();
+        .fab {
+          font-size: 10px;
+          padding: 0px 5px;
+        }
+      }
+
+      div {
+        height: 25px;
+        div {.center();
+          .fas {
+            font-size: 10px;
+            padding: 13px 5px;
+            margin: 0px 9px;
+            }
+          }
+        }  
+        div {.center();
+          .fas {
+            font-size: 10px;
+            padding: 13px 5px;
+            margin: 0px 9px;
+            }
+        }
+      }
+
+    }
+  }
+
+nav {
+  .container{
+    .navbar-brand{font-family: 'open-sans'; color: @brand_color;}
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          font-size: 10px; 
+          padding: 5px 25px;
+          font-family: 'open-sans';
+          &.active {
+          color: @brand_color;
+          border: 1px solid @brand_color;
+          border-radius: 25px;
+          font-family: 'open-sans';
+          }
+        }
+      }
+        
+       
+      }
+    }
+  }
+
+
+
+.banner {
+  padding: 50px;
+  background-color: #4ca368;;
+  .overlay {
+    width: 100%;
+    // border: 5px solid white;
+    .heading {text-align: center;}
+    p{
+      text-align: center;
+      width: 60%;
+      font-size: 12px;
+      font-family: 'open-sans';
+    }
+    .image {
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 40%;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+      }
+    }
+
+    .bottom {
+      div{
+        // border: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: -10px;
+          input {
+            padding: 5px 15px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            color: rgb(207, 204, 204);
+            border: none;
+            outline: none;
+            font-size: 10px;
+            
+
+          }
+          button {
+            padding: 5px 10px;
+            font-size:10px;
+            background-color: #37804e;
+            border: none;
+            outline: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            position: absolute;
+            top: 0;
+            left: 70%;
+            
+
+            a {
+              text-decoration: none;
+              color: white;
+            }
+
+          }
+        }
+      }
+      margin: 20px 0;
+      p {width: 100%;color: white; padding: 10px 0;}
+    }
+  }
+}
+
+
+.sign-up {
+  // border: 1px solid black;
+  margin-bottom:50px ;
+  .heading {
+    padding: 60px;
+    font-size: 40px;
+  }
+
+  .process {
+    width: 70%;
+    box-shadow: 0px 0px 2px gray;
+    padding: 60px 0px;
+    .left {
+      .fas {
+        font-size: 55px;
+        margin: 0 20px;
+      }
+
+      h4 {
+        font-family: 'roboto';
+      }
+      p {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .show-process {
+    padding: 25px 50px;
+    width: 100%;
+    text-align: center;
+    // border: 1px solid black;
+    .process-item {
+      // border: 1px solid black;
+      .fas {
+        padding: 10px;
+        border: 1px solid @brand_color;
+        border-radius: 50%;
+        color: @brand_color;
+        transition: all linear .5s;
+        &:hover{
+          color: white;
+          background-color: @brand_color;
+          transition: all linear .5s;
+        }
+      }
+      div{}
+    }
+  }
+}
+
+
+
+#service {
+  .service-body{
+    .heading {}
+
+    .switch-button {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      padding: 25px 0;
+
+      .left{
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 0px 2px #777777;
+        transition: all linear .5s;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        line-height: 50px;
+        &:hover {
+            background-color: @brand_color;
+            transition: all linear .5s;
+            color: white;
+        }
+      }
+      .middle{
+        width: 40px;
+        height: 40px;
+        background-color: #4ca368;
+        border-radius: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        line-height: 40px;
+      }
+      .right{
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 0px 2px #777777;
+        transition: all linear .5s;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius:25px ;
+        line-height: 50px;
+        &:hover {
+             background-color: @brand_color;
+             transition: all linear .5s;
+             color: white;
+        }
+      }
+    }
+
+    .service-card {
+      .card-body {
+        
+        .card-item {
+          // border: 1px solid @brand_color;
+          position: relative;
+          transition: all linear .5s;
+          &:hover {
+            box-shadow: 0px 0px 3px @brand_color;
+            transition: all linear .5s;
+          }
+        
+          .heading {
+            font-size: 20px;
+            color: #000000;
+            font-family: 'roboto';
+            text-transform: uppercase;
+            padding: 10px 0;
+            line-height: 20px;
+            font-weight: 600;
+          }
+          .abailable-service {
+           
+            .heading {
+              font-size: 30px;
+            }
+            .center {
+              margin: 5px 0;
+              transition: all linear .5s;
+              &:hover {
+                margin-left:10px;
+                transition: all linear .5s;
+                font-size: 12px;
+              }
+              p {
+                font-size: 15px;
+                font-family: 'roboto';
+              }
+            }
+          }
+
+          button {
+            margin: 30px;
+            padding: 8px 25px;
+            outline: none;
+            border: none;
+            transition: all linear .5s;
+            border-radius: 25px;
+            font-size: 14px;
+            
+          }
+        }
+      }
+    }
+  }
+}
+

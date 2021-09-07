@@ -1,0 +1,273 @@
+@import "../css/theme.css";
+.heading {
+  font-size: 40px;
+  color: #3a3939fd;
+  font-family: 'roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pera {
+  font-size: 14px;
+  font-family: 'roboto';
+  color: #777777;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  color: #5db442;
+}
+header {
+  background-color: black;
+}
+header div div div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div div div .fab {
+  font-size: 10px;
+  padding: 0px 5px;
+}
+header div div div {
+  height: 25px;
+}
+header div div div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div div div div .fas {
+  font-size: 10px;
+  padding: 13px 5px;
+  margin: 0px 9px;
+}
+header div div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div div div .fas {
+  font-size: 10px;
+  padding: 13px 5px;
+  margin: 0px 9px;
+}
+nav .container .navbar-brand {
+  font-family: 'open-sans';
+  color: #5db442;
+}
+nav .container .navbar-nav .nav-item .nav-link {
+  font-size: 10px;
+  padding: 5px 25px;
+  font-family: 'open-sans';
+}
+nav .container .navbar-nav .nav-item .nav-link.active {
+  color: #5db442;
+  border: 1px solid #5db442;
+  border-radius: 25px;
+  font-family: 'open-sans';
+}
+.banner {
+  padding: 50px;
+  background-color: #4ca368;
+}
+.banner .overlay {
+  width: 100%;
+}
+.banner .overlay .heading {
+  text-align: center;
+}
+.banner .overlay p {
+  text-align: center;
+  width: 60%;
+  font-size: 12px;
+  font-family: 'open-sans';
+}
+.banner .overlay .image {
+  width: 100%;
+  text-align: center;
+}
+.banner .overlay .image img {
+  width: 40%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+.banner .overlay .bottom {
+  margin: 20px 0;
+}
+.banner .overlay .bottom div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .overlay .bottom div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -10px;
+}
+.banner .overlay .bottom div form input {
+  padding: 5px 15px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: #cfcccc;
+  border: none;
+  outline: none;
+  font-size: 10px;
+}
+.banner .overlay .bottom div form button {
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: #37804e;
+  border: none;
+  outline: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+.banner .overlay .bottom div form button a {
+  text-decoration: none;
+  color: white;
+}
+.banner .overlay .bottom p {
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+}
+.sign-up {
+  margin-bottom: 50px ;
+}
+.sign-up .heading {
+  padding: 60px;
+  font-size: 40px;
+}
+.sign-up .process {
+  width: 70%;
+  box-shadow: 0px 0px 2px gray;
+  padding: 60px 0px;
+}
+.sign-up .process .left .fas {
+  font-size: 55px;
+  margin: 0 20px;
+}
+.sign-up .process .left h4 {
+  font-family: 'roboto';
+}
+.sign-up .process .left p {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+.sign-up .show-process {
+  padding: 25px 50px;
+  width: 100%;
+  text-align: center;
+}
+.sign-up .show-process .process-item .fas {
+  padding: 10px;
+  border: 1px solid #5db442;
+  border-radius: 50%;
+  color: #5db442;
+  transition: all linear 0.5s;
+}
+.sign-up .show-process .process-item .fas:hover {
+  color: white;
+  background-color: #5db442;
+  transition: all linear 0.5s;
+}
+#service .service-body .switch-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 25px 0;
+}
+#service .service-body .switch-button .left {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 0px 2px #777777;
+  transition: all linear 0.5s;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  line-height: 50px;
+}
+#service .service-body .switch-button .left:hover {
+  background-color: #5db442;
+  transition: all linear 0.5s;
+  color: white;
+}
+#service .service-body .switch-button .middle {
+  width: 40px;
+  height: 40px;
+  background-color: #4ca368;
+  border-radius: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 40px;
+}
+#service .service-body .switch-button .right {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 0px 2px #777777;
+  transition: all linear 0.5s;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px ;
+  line-height: 50px;
+}
+#service .service-body .switch-button .right:hover {
+  background-color: #5db442;
+  transition: all linear 0.5s;
+  color: white;
+}
+#service .service-body .service-card .card-body .card-item {
+  position: relative;
+  transition: all linear 0.5s;
+}
+#service .service-body .service-card .card-body .card-item:hover {
+  box-shadow: 0px 0px 3px #5db442;
+  transition: all linear 0.5s;
+}
+#service .service-body .service-card .card-body .card-item .heading {
+  font-size: 20px;
+  color: #000000;
+  font-family: 'roboto';
+  text-transform: uppercase;
+  padding: 10px 0;
+  line-height: 20px;
+  font-weight: 600;
+}
+#service .service-body .service-card .card-body .card-item .abailable-service .heading {
+  font-size: 30px;
+}
+#service .service-body .service-card .card-body .card-item .abailable-service .center {
+  margin: 5px 0;
+  transition: all linear 0.5s;
+}
+#service .service-body .service-card .card-body .card-item .abailable-service .center:hover {
+  margin-left: 10px;
+  transition: all linear 0.5s;
+  font-size: 12px;
+}
+#service .service-body .service-card .card-body .card-item .abailable-service .center p {
+  font-size: 15px;
+  font-family: 'roboto';
+}
+#service .service-body .service-card .card-body .card-item button {
+  margin: 30px;
+  padding: 8px 25px;
+  outline: none;
+  border: none;
+  transition: all linear 0.5s;
+  border-radius: 25px;
+  font-size: 14px;
+}
