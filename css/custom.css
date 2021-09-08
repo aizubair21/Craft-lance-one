@@ -21,7 +21,7 @@
   font-size: 13px;
   margin: 0 6px;
 }
-.nav-link:hover:not(.active) {
+.nav-link:not(.active):hover {
   border: 1px solid #5db442;
   border-radius: 25px;
   transition: all linear .5s;
@@ -38,7 +38,6 @@
  
 }
 .round:hover {
-  transform: rotateY(360deg);
   box-shadow: 0px 0px 15px #5db442;
   transition: all linear .5s;
 }

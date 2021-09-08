@@ -1,5 +1,5 @@
-$('.nav-item').on("click", function () {
-  $('.nav-item').removeClass("active");
+$('.nav-link').on("click", function () {
+  $('.nav-link').removeClass("active");
 
   $(this).addClass("active");
 

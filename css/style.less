@@ -20,12 +20,13 @@
   align-items: center;
 }
 .active {
-  color: @brand_color;
-  border: 1px solid @brand_color;
+  color: white;
   border-radius: 25px;
   background-color: @brand_color;
-  color: white;
   transition: all linear .5s;
+}
+.tr(@time) {
+  transition: all linear @time;
 }
 
 header {
@@ -69,16 +70,20 @@ nav {
     .navbar-brand{font-family: 'open-sans'; color: @brand_color;}
     .navbar-nav{
       .nav-item{
-        transition: all linear .5s;
+        
+        
         .nav-link{
-          font-size: 10px; 
-          padding: 5px 25px;
-          font-family: 'open-sans';
-          border-radius: 25px;
+          font-size: 13px; 
+          width: 75px;
+          height:30px;
           font-family: 'open-sans';
           transition: all linear .5s;
-          border: 1px solid white;
           margin: 0 5px;
+          transition: all linear .5s;
+          border: 1px solid inherit;
+          display: flex;
+          align-items: center;
+          justify-content: center;;
           
         }
       }
@@ -287,60 +292,143 @@ nav {
     }
 
     .service-card {
-      .card-body {
-        
-        .card-item {
-          // border: 1px solid @brand_color;
-          position: relative;
-          transition: all linear .5s;
-          width: 28%;
-          cursor: pointer;
-          &:hover {
-            box-shadow: 0px 0px 3px @brand_color;
+        .row {
+          width: 80%;
+          margin: 0 auto;
+          .card-item {
+            // border: 1px solid @brand_color;
+            margin: 15px auto;
+            position: relative;
             transition: all linear .5s;
-          }
-        
-          .heading {
-            font-size: 20px;
-            color: #000000;
-            font-family: 'roboto';
-            text-transform: uppercase;
-            padding: 10px 0;
-            line-height: 20px;
-            font-weight: 600;
-          }
-          .abailable-service {
-           
-            .heading {
-              font-size: 30px;
-            }
-            .center {
-              margin: 5px 0;
+            cursor: pointer;
+            box-shadow: 0px 0px 1px #777777;
+            box-sizing: border-box;
+            &:hover {
+              box-shadow: 0px 0px 3px @brand_color;
               transition: all linear .5s;
-              &:hover {
-                margin-left:10px;
-                transition: all linear .5s;
-                font-size: 12px;
+            }
+          
+            .heading {
+              font-size: 20px;
+              color: #000000;
+              font-family: 'roboto';
+              text-transform: uppercase;
+              padding: 10px 0;
+              line-height: 20px;
+              font-weight: 600;
+            }
+            .abailable-service {
+             
+              .heading {
+                font-size: 30px;
               }
-              p {
-                font-size: 15px;
-                font-family: 'roboto';
+              .center {
+                margin: 5px 0;
+                transition: all linear .5s;
+                &:hover {
+                  margin-left:10px;
+                  transition: all linear .5s;
+                  font-size: 12px;
+                }
+                p {
+                  font-size: 15px;
+                  font-family: 'roboto';
+                }
               }
             }
-          }
-
-          button {
-            margin: 30px;
-            padding: 8px 25px;
-            outline: none;
-            border: none;
-            transition: all linear .5s;
-            border-radius: 25px;
-            font-size: 14px;
-            
+  
+            button {
+              margin: 10px auto;
+              padding: 8px 25px;
+              outline: none;
+              border: none;
+              transition: all linear .5s;
+              border-radius: 25px;
+              font-size: 14px;
+              
+            }
           }
         }
-      }
+    }
+  }
+}
+
+#support  {
+  padding: 10px;
+  margin: 50px 0;
+  .container {
+    // border: 1px solid green;
+
+    .common-heading {
+      font-size: 30px;
+      text-align: center;
+      width: 50%;
+      margin: 10px auto;
+      font-family: 'roboto';
+      line-height: 30px;
+      margin-bottom: 50px;
+      word-spacing: 1px;
+      color: #5e5d5d;
+    }
+    
+    .row{
+      margin: 10px;
+      .column-body{
+        padding: 20px 10px;
+        text-align: center;
+        width: 85%;
+        height: 250px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 1px #777777;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .tr (.5s);
+
+        &:hover {
+          background-color: @brand_color;
+          color: white;
+          .icon {
+            color: white;
+            .tr(.5s);
+          }
+          p {
+            color: white;
+            .tr(.5s);
+          }
+          .icon::after {
+
+            background-color: white;
+            .tr(.5s);
+          }
+        }
+        .icon {
+          color: @brand_color;
+          font-size: 40px;
+          position: relative;
+
+          &::after {
+            content:"";
+            position: absolute;
+            left: 50%;
+            top: 130%;
+            transform: translate(-50%);
+            width: 30%;
+            height: 2px;
+          }
+        }
+        h4 {
+          font-size: 16px;
+          padding: 10px 0;
+          font-family: 'robo-medium';
+          .tr(.5s);
+        }
+        p{
+          padding: 5px;
+          font-family: 'open-sans';
+        }
+      } 
+        
     }
   }
 }

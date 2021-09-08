@@ -53,7 +53,7 @@
     padding: 10px;
   }
   
-
+  
   #service .service-body .row {
     margin: 0;
   }
@@ -85,5 +85,37 @@
   }
   #service .service-body .service-card .card-body .card-item button {
     margin: 10px;
+  }
+
+  #support .common-heading {
+    width: 90%;
+    font-size: 20px;
+  }
+
+
+  #support .container .common-heading {
+    font-size: 20px;
+    margin: 0;
+    width:100%;
+  }
+
+  #support .container .row .column-body {
+    width: 100%;
+  }
+
+#support .container .row .column-body p {
+  padding: 20px;
+}
+
+
+}
+
+@media  (min-width:400px) and (max-width:992px) {
+  #support .container .common-heading {
+    width:100%;
+    font-size: 25px;
+  }
+  #service .heading {
+    font-size: 30px; 
   }
 }
