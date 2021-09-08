@@ -20,7 +20,12 @@
   align-items: center;
 }
 .active {
-  color: #5db442;
+  color: @brand_color;
+  border: 1px solid @brand_color;
+  border-radius: 25px;
+  background-color: @brand_color;
+  color: white;
+  transition: all linear .5s;
 }
 
 header {
@@ -64,16 +69,17 @@ nav {
     .navbar-brand{font-family: 'open-sans'; color: @brand_color;}
     .navbar-nav{
       .nav-item{
+        transition: all linear .5s;
         .nav-link{
           font-size: 10px; 
           padding: 5px 25px;
           font-family: 'open-sans';
-          &.active {
-          color: @brand_color;
-          border: 1px solid @brand_color;
           border-radius: 25px;
           font-family: 'open-sans';
-          }
+          transition: all linear .5s;
+          border: 1px solid white;
+          margin: 0 5px;
+          
         }
       }
         
@@ -91,11 +97,13 @@ nav {
     width: 100%;
     // border: 5px solid white;
     .heading {text-align: center;}
+    width: 100%;
     p{
       text-align: center;
-      width: 60%;
+      width: 50%;
       font-size: 12px;
       font-family: 'open-sans';
+      color: black;
     }
     .image {
       width: 100%;
@@ -120,28 +128,33 @@ nav {
           flex-direction: column;
           align-items: center;
           margin-left: -10px;
+          position: relative;
           input {
-            padding: 5px 15px;
+            padding: 5px 20px;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
-            color: rgb(207, 204, 204);
+            color: rgb(0, 0, 0);
             border: none;
             outline: none;
-            font-size: 10px;
-            
+            font-size: 12px;
+            cursor: pointer;
+            position: absolute;
+            left: 11%;
+            top: -25px;
 
           }
           button {
             padding: 5px 10px;
-            font-size:10px;
+            font-size:12px;
             background-color: #37804e;
             border: none;
             outline: none;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             position: absolute;
-            top: 0;
+            top: -25px;
             left: 70%;
+            cursor: pointer;
             
 
             a {
@@ -175,10 +188,12 @@ nav {
       .fas {
         font-size: 55px;
         margin: 0 20px;
+        cursor: pointer;
       }
 
       h4 {
         font-family: 'roboto';
+        cursor: pointer;
       }
       p {
         font-size: 10px;
@@ -201,6 +216,7 @@ nav {
         border-radius: 50%;
         color: @brand_color;
         transition: all linear .5s;
+        cursor: pointer;
         &:hover{
           color: white;
           background-color: @brand_color;
@@ -233,6 +249,7 @@ nav {
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         line-height: 50px;
+        cursor: pointer;
         &:hover {
             background-color: @brand_color;
             transition: all linear .5s;
@@ -240,8 +257,9 @@ nav {
         }
       }
       .middle{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
         background-color: #4ca368;
         border-radius: 70%;
         position: absolute;
@@ -249,7 +267,7 @@ nav {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        line-height: 40px;
+        line-height: 35px;
       }
       .right{
         width: 200px;
@@ -259,6 +277,7 @@ nav {
         border-bottom-right-radius: 25px;
         border-top-right-radius:25px ;
         line-height: 50px;
+        cursor: pointer;
         &:hover {
              background-color: @brand_color;
              transition: all linear .5s;
@@ -274,6 +293,8 @@ nav {
           // border: 1px solid @brand_color;
           position: relative;
           transition: all linear .5s;
+          width: 28%;
+          cursor: pointer;
           &:hover {
             box-shadow: 0px 0px 3px @brand_color;
             transition: all linear .5s;

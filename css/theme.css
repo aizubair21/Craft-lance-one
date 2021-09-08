@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
 @font-face {
   font-family: 'roboto';
   src: url(../font/Roboto-Regular.ttf);
@@ -6,6 +11,10 @@
   font-family: 'open-sans';
   src: url('../font/OpenSans-Regular.ttf');
 }
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../font/Roboto-Medium.ttf');
+}
 
 :root {
   @brand_color:  #5db442;
@@ -13,10 +22,16 @@
   .heading {
   font-size: 45px;
   color: black;
-  font-family: 'roboto';
+  font-family: 'roboto-medium';
 }
 p {
   font-size:10px;
   margin: 0;
   color: rgb(119, 119, 119);
+  font-family: 'open-sans';
 }
+
+
+
+
+

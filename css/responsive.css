@@ -1,0 +1,89 @@
+@media screen and (max-width: 400px) {
+  header {
+    display: none;
+  }
+  #side-menu .close {
+    float: right;
+    font-size: 20px;
+  }
+
+  .nav-link:hover:not(.active) {
+    border:none;
+    transition: all linear .5s;
+  }
+
+  .banner {
+    padding: 20px;
+  }
+  .heading {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-family: 'roboto-medium';
+  }
+  .banner .overlay p {
+    font-size: 12px;
+    width: 80%;
+    padding: 10px 0px;
+    line-height: 10px;
+    text-align: justify;
+  }
+  .banner .overlay .image img {
+    width: 100%;
+  }
+  .banner .overlay .bottom p {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .sign-up .sign-up-body .heading {
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'roboto-medium';
+    color: black;
+  }
+  .sign-up .sign-up-body .process {
+    width: 90%;
+  }
+  .sign-up .sign-up-body .show-process {
+    padding: 10px;
+  }
+  
+
+  #service .service-body .row {
+    margin: 0;
+  }
+  #service .service-body .switch-button {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #service .service-body .switch-button .left, .right {
+    font-size: 13px;
+  } 
+  #service .service-body .switch-button .middle {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  #service .service-card .card-body .row {
+    display: block;
+  }
+  #service .service-card .card-body .row .card-item {
+    width: 100%;
+    margin: 15px auto;
+    box-shadow: 0px 0px 3px #5db442;
+  }
+
+  #service .service-body .service-card .card-body .card-item .abailable-service .center {
+    margin: 0;
+  }
+  #service .service-body .service-card .card-body .card-item button {
+    margin: 10px;
+  }
+}
