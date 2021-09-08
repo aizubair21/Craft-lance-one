@@ -47,17 +47,10 @@ header div div div div {
 header div div div div .fas {
   font-size: 10px;
   padding: 13px 5px;
-  margin: 0px 9px;
+  margin: 0px 5px;
 }
-header div div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header div div div .fas {
-  font-size: 10px;
-  padding: 13px 5px;
-  margin: 0px 9px;
+header div div div p {
+  color: white;
 }
 nav .container .navbar-brand {
   font-family: 'open-sans';
@@ -158,6 +151,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 .sign-up .heading {
   padding: 60px;
   font-size: 40px;
+  text-align: center;
 }
 .sign-up .process {
   width: 70%;
@@ -365,4 +359,32 @@ nav .container .navbar-nav .nav-item .nav-link {
 #support .container .row .column-body p {
   padding: 5px;
   font-family: 'open-sans';
+}
+footer {
+  background-color: #efefef;
+}
+footer .container .footer-body .row .header {
+  font-size: 12px;
+  font-family: 'robo-medium';
+  font-weight: 600;
+  padding: 20px 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+footer .container .footer-body .row ul {
+  padding: 0;
+}
+footer .container .footer-body .row ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+footer .container .footer-body .row ul li a {
+  color: #777777;
+  text-decoration: none;
+  font-size: 10px;
+  text-align: left;
+}
+footer .container .footer-body .row .container .brand-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
