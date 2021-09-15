@@ -122,6 +122,9 @@
   #service .service-body .service-card .row .card-item {
     width: 45%;
   }
+  #service .service-body .service-card .row .card-item .abailable-service .center p {
+    font-size: 12px;
+  }
 }
 
 

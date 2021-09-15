@@ -18,10 +18,10 @@
   align-items: center;
 }
 .active {
-  color: white;
   border-radius: 25px;
   background-color: #5db442;
   transition: all linear 0.5s;
+  color: white;
 }
 header {
   background-color: black;
@@ -61,6 +61,7 @@ nav .container .navbar-nav .nav-item .nav-link {
   width: 75px;
   height: 30px;
   font-family: 'open-sans';
+  font-weight: 600;
   margin: 0 5px;
   transition: all linear 0.5s;
   border: 1px solid inherit;
